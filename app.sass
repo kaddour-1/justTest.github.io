@@ -42,7 +42,7 @@ Header
 .logo
     font-weight: bolder  
     position: absolute
-    right: 10px
+    right:  0.7em
     top: 15px
     z-index: 1
     color: white
@@ -86,6 +86,13 @@ nav
     transition: transform 0.3s
 
 /* Hamburger menu */
+.hamburger-menu
+    position: absolute
+    left:  0.7em
+    top: 20px
+    cursor: pointer
+    z-index: 1
+
 .bar 
     width: 24px
     height: 3px
@@ -99,13 +106,6 @@ nav
     
 .bar:last-child
     transform: translateY(3px)
-
-.hamburger-menu
-    position: absolute
-    left: 10px
-    top: 20px
-    cursor: pointer
-    z-index: 1
 
 .animate.bar:first-child,
 .animate.bar:last-child
@@ -201,3 +201,20 @@ button
     margin-top: 2.4em
     img
         margin: 1em
+
+h2
+    text-align: center
+
+.service
+    display: flex
+    flex-direction: column
+    text-align: center
+    font-weight: 600
+    font-size: 2rem
+    margin: 1em
+    padding: 1em
+    background: $secondary-bg-color
+    width: content
+    
+    img
+        margin-top: 0.5em
