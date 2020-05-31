@@ -1,26 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>My Site</title>
 </head>
+
 <body>
     <header>
         <a href="#" class="logo">Logo</a>
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <nav>
-            <div class="hamburger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
             <ul class="menu">
                 <li class="menu-item"><a href="#" class="menu-link">SERVICES</a></li>
                 <li class="menu-item"><a href="#" class="menu-link">PORTFOLIO</a></li>
                 <li class="menu-item"><a href="#" class="menu-link">CONTACT</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        let hamburgerMenu = document.querySelector(".hamburger-menu");
+        let bars = document.querySelectorAll(".bar");
+        let navbar = document.querySelector("nav");
+        hamburgerMenu.addEventListener("click", toggleMenu)
+        function toggleMenu() {
+            bars.forEach(bar => bar.classList.toggle("animate"));
+            navbar.classList.toggle("display-menu");
+        }
+
+
+
+    </script>
 </body>
-</html>    
+
+</html>

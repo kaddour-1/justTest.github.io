@@ -1,3 +1,6 @@
+/*********** Set up global variables ***********/
+/*Colors*/
+/*********** Set up general styles ***********/
 html {
   box-sizing: border-box;
   font-size: 10px;
@@ -10,6 +13,9 @@ html {
 body {
   font-family: Arial, sans-serif;
   font-size: 1.6rem;
+  background-color: #16161A;
+  color: #94A1B2;
+  margin: 0;
 }
 
 ul {
@@ -21,6 +27,103 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/********** Header ***********/
+Header {
+  margin-top: 0.8em;
+  padding: 0;
+}
+
+/* Logo */
+.logo {
+  font-weight: bolder;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  z-index: 1;
+  color: white;
+}
+
+/* navbar */
+nav {
+  background-color: #f3409a;
+  position: absolute;
+  top: 0;
+  width: 28em;
+  height: 27em;
+  transform-origin: top left;
+  transform: scale(0);
+  clip-path: circle(0% at 0 0);
+  transition: all 0.3s;
+}
+
+.display-menu {
+  transform: scale(1);
+  clip-path: circle(59.11% at 19px 55px);
+  transition: all 0.3s;
+}
+
+.menu {
+  margin-top: 5em;
+}
+
+.menu-link {
+  color: white;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transform: scale(1);
+  transition: transform 0.3s;
+  padding: 1em 5em;
+}
+
+.menu-link:hover {
+  transform: scale(1.15);
+  transition: transform 0.3s;
+}
+
+/* Hamburger menu */
+.bar {
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #f3409a;
+  transition: all 0.3s;
+}
+
+.bar:first-child {
+  transform: translateY(-3px);
+}
+
+.bar:last-child {
+  transform: translateY(3px);
+}
+
+.hamburger-menu {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.animate.bar:first-child,
+.animate.bar:last-child {
+  transition: all 0.3s;
+  background-color: white;
+}
+
+.animate.bar:nth-child(2) {
+  opacity: 0;
+}
+
+.animate.bar:first-child {
+  transform: translateY(3px) rotate(-45deg);
+}
+
+.animate.bar:last-child {
+  transform: translateY(-3px) rotate(45deg);
 }
 
 /*# sourceMappingURL=style.css.map */
