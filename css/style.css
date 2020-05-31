@@ -16,6 +16,8 @@ body {
   background-color: #16161A;
   color: #94A1B2;
   margin: 0;
+  line-height: 1.4;
+  font-weight: normal;
 }
 
 ul {
@@ -124,6 +126,88 @@ nav {
 
 .animate.bar:last-child {
   transform: translateY(-3px) rotate(45deg);
+}
+
+/********** Home section ***********/
+.wrapper {
+  margin: 0 0.7em;
+}
+
+.home-section {
+  margin: 5em 0;
+}
+
+.avatar {
+  width: 7.5em;
+  margin: auto;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  line-height: 1;
+  color: #FFFFFE;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+}
+small {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.header {
+  font-size: 2.2rem;
+}
+
+.bio {
+  margin-bottom: 2em;
+}
+
+/* Buttons */
+button {
+  background: none;
+  border: none;
+  font-size: 100%;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 4em;
+  font-size: 1.35rem;
+  margin: 0.3em;
+  transition: background 0.3s;
+}
+
+.primary {
+  background: #7F5AF0;
+}
+.primary:hover {
+  background: #2CB67D;
+  transition: background 0.3s;
+}
+
+.secondary {
+  border: 2px solid #7F5AF0;
+}
+.secondary:hover {
+  background: #7F5AF0;
+  transition: background 0.3s;
+}
+
+.sm {
+  width: max-content;
+  margin: auto;
+  margin-top: 2.4em;
+}
+.sm img {
+  margin: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
