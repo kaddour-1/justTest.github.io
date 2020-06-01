@@ -12,7 +12,7 @@ html
     box-sizing: border-box
     font-size: 10px
 
-*, *::before, *::after 
+*, *::before, *::after
     box-sizing: inherit
 
 body
@@ -24,31 +24,31 @@ body
     line-height: 1.4
     font-weight: normal
 
-ul 
+ul
     margin: 0
     padding: 0
     list-style: none
 
-a 
+a
     text-decoration: none
     color: inherit
 
 /********** Header ***********/
-Header
+header
     margin-top: 0.8em
     padding: 0
 
 /* Logo */
 .logo
-    font-weight: bolder  
+    font-weight: bolder
     position: absolute
-    right:  0.7em
+    right: 0.7em
     top: 15px
     z-index: 1
-    color: white
+    color: hotpink
 
 /* navbar */
-nav  
+nav
     background-color: rgb(243, 64, 154)
     position: absolute
     top: 0
@@ -59,20 +59,20 @@ nav
     clip-path: circle(0% at 0 0)
     transition: all 0.3s
 
-.display-menu 
+.display-menu
     transform: scale(1)
     clip-path: circle(59.11% at 19px 55px)
     transition: all 0.3s
 
-.menu 
+.menu
     //display: none
     margin-top: 5em
-  
-.menu-item 
+
+.menu-item
     //border: 1px solid yellowgreen
 
 .menu-link
-    color: white    
+    color: white
     display: inline-block
     font-size: 1.5rem
     font-weight: 600
@@ -81,35 +81,34 @@ nav
     padding: 1em 5em
     //border: 1px solid yellowgreen
 
-.menu-link:hover 
+.menu-link:hover
     transform: scale(1.15)
     transition: transform 0.3s
 
 /* Hamburger menu */
 .hamburger-menu
     position: absolute
-    left:  0.7em
+    left: 0.7em
     top: 20px
     cursor: pointer
     z-index: 1
 
-.bar 
+.bar
     width: 24px
     height: 3px
     border-radius: 2px
-    background-color: rgb(243, 64, 154)
-    transition: all 0.3s 
+    background-color: hotpink
+    transition: all 0.3s
 
 .bar:first-child
     transform: translateY(-3px)
-    
-    
+
 .bar:last-child
     transform: translateY(3px)
 
 .animate.bar:first-child,
 .animate.bar:last-child
-    transition: all 0.3s 
+    transition: all 0.3s
     background-color: white
 
 .animate.bar:nth-child(2)
@@ -118,15 +117,11 @@ nav
 .animate.bar:first-child
     transform: translateY(3px) rotate(-45deg)
 
-    
 .animate.bar:last-child
     transform: translateY(-3px) rotate(45deg)
 
-    
-
-
 /********** Home section ***********/
-.wrapper 
+.wrapper
     margin: 0 0.7em
     //border: 1px solid red
 
@@ -138,26 +133,24 @@ nav
     margin: auto
     display: block
 
-h1 
+h1
     text-align: center
     font-size: 2.6rem
-    font-weight:bolder
+    font-weight: bolder
     line-height: 1
-    color: #FFFFFE
+    color: hotpink
     margin-top: 1.33em
     margin-bottom: 1.33em
 
-
-
-small   
+small
     font-size: 1.2rem
     margin-bottom: 1em
     display: inline-block
-    font-weight: 400 
+    font-weight: 400
 
 .header
     font-size: 2.2rem
-    
+
 .bio
     margin-bottom: 2em
 
@@ -170,7 +163,6 @@ button
     color: inherit
     padding: 0
     margin: 0
-
 
 button
     color: white
@@ -187,20 +179,22 @@ button
         background: #2CB67D
         transition: background 0.3s
 
-
 .secondary
     border: 2px solid #7F5AF0
-    
+
     &:hover
         background: #7F5AF0
         transition: background 0.3s
 
 .sm
     width: max-content
-    margin: auto
-    margin-top: 2.4em
-    img
+    margin: 2em auto
+    li
+        // border: 1px solid
+        display: inline-block
         margin: 1em
+
+/********** Services section ***********/
 
 h2
     text-align: center
@@ -215,16 +209,50 @@ h2
     padding: 1em
     background: $secondary-bg-color
     width: content
-    
-    img
-        margin-top: 0.5em
 
+    img
+        width: 60%
+        margin: 1em auto 0.5em
+
+/********** Home section ***********/
 
 .project
     background: $secondary-bg-color
-    width: 100%
     height: 300px
     margin: 1.5em 0
 
 .section
     margin: 10em 0
+
+.contact
+    background: $secondary-bg-color
+    padding: 1em 0.7em
+    margin-bottom: 0
+
+input, textarea
+    width: 100%
+    background: none
+    border: 1px solid
+    padding: 0.5em
+    font-size: 100%
+    color: inherit
+
+label
+    margin-bottom: 0.3em
+    display: inline-block
+
+input[type="submit"]
+    border-radius: 5em
+    border: none
+    border: 2px solid #27d8c9
+    color: #3dcec1
+    font-weight: bold
+    transition: all 0.3s
+
+    &:hover
+        background: #3dcec1
+        color: white
+        transition: all 0.3s
+
+.column
+    margin-bottom: 1em

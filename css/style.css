@@ -32,7 +32,7 @@ a {
 }
 
 /********** Header ***********/
-Header {
+header {
   margin-top: 0.8em;
   padding: 0;
 }
@@ -44,7 +44,7 @@ Header {
   right: 0.7em;
   top: 15px;
   z-index: 1;
-  color: white;
+  color: hotpink;
 }
 
 /* navbar */
@@ -98,7 +98,7 @@ nav {
   width: 24px;
   height: 3px;
   border-radius: 2px;
-  background-color: #f3409a;
+  background-color: hotpink;
   transition: all 0.3s;
 }
 
@@ -146,11 +146,13 @@ nav {
 h1 {
   text-align: center;
   font-size: 2.6rem;
+  font-weight: bolder;
   line-height: 1;
-  color: #FFFFFE;
+  color: hotpink;
   margin-top: 1.33em;
   margin-bottom: 1.33em;
 }
+
 small {
   font-size: 1.2rem;
   margin-bottom: 1em;
@@ -203,13 +205,14 @@ button {
 
 .sm {
   width: max-content;
-  margin: auto;
-  margin-top: 2.4em;
+  margin: 2em auto;
 }
-.sm img {
+.sm li {
+  display: inline-block;
   margin: 1em;
 }
 
+/********** Services section ***********/
 h2 {
   text-align: center;
 }
@@ -226,18 +229,57 @@ h2 {
   width: content;
 }
 .service img {
-  margin-top: 0.5em;
+  width: 60%;
+  margin: 1em auto 0.5em;
 }
 
+/********** Home section ***********/
 .project {
   background: #242629;
-  width: 100%;
   height: 300px;
   margin: 1.5em 0;
 }
 
 .section {
   margin: 10em 0;
+}
+
+.contact {
+  background: #242629;
+  padding: 1em 0.7em;
+  margin-bottom: 0;
+}
+
+input, textarea {
+  width: 100%;
+  background: none;
+  border: 1px solid;
+  padding: 0.5em;
+  font-size: 100%;
+  color: inherit;
+}
+
+label {
+  margin-bottom: 0.3em;
+  display: inline-block;
+}
+
+input[type=submit] {
+  border-radius: 5em;
+  border: none;
+  border: 2px solid #27d8c9;
+  color: #3dcec1;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+input[type=submit]:hover {
+  background: #3dcec1;
+  color: white;
+  transition: all 0.3s;
+}
+
+.column {
+  margin-bottom: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
