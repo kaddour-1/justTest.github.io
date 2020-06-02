@@ -4,7 +4,8 @@
 /*Colors*/
 $primary-bg-color: #16161A
 $secondary-bg-color: #242629
-$text-color: #94A1B2
+// $text-color: #94A1B2
+$text-color: #949494
 $btn-color: #FFFFFE
 $btn-bg: #7F5AF0
 
@@ -47,11 +48,10 @@ header
     right: 0.7em
     top: 15px
     z-index: 1
-    color: $text-color
 
 /* navbar */
 nav
-    background-color: rgb(243, 64, 154)
+    background: linear-gradient(170deg, #00e0fd,#f300fb 50%)
     position: absolute
     top: 0
     width: 28em
@@ -63,15 +63,14 @@ nav
 
 .display-menu
     transform: scale(1)
-    clip-path: circle(59.11% at 19px 55px)
+    // clip-path: circle(59.11% at 19px 55px)
+    // clip-path: circle(39.77% at 35px 95px)
+    clip-path: circle(42.04% at 3px 132px)
     transition: all 0.3s
 
 .menu
     //display: none
     margin-top: 5em
-
-.menu-item
-    //border: 1px solid yellowgreen
 
 .menu-link
     color: white
@@ -80,8 +79,7 @@ nav
     font-weight: 600
     transform: scale(1)
     transition: transform 0.3s
-    padding: 1em 5em
-    //border: 1px solid yellowgreen
+    padding: 1em
 
 .menu-link:hover
     transform: scale(1.15)
@@ -124,7 +122,7 @@ nav
 
 /********** Home section ***********/
 .wrapper
-    margin: 0 0.7em
+    margin: 0 1rem
     //border: 1px solid red
 
 .home-section
@@ -136,13 +134,11 @@ nav
     display: block
 
 h1
-    text-align: center
-    font-size: 2.5rem
-    font-weight: bolder
-    line-height: 1.2
-    margin-top: 1.33em
-    margin-bottom: 1.33em
+    font-size: 2.2rem
     font-weight: 900
+    line-height: 1.2
+    text-align: center
+    margin: 1.33em 0
 
     // background: linear-gradient(90deg,#ff8a00,#e52e71)
     background: linear-gradient(90deg,#00e0fd,#f300fb)
@@ -150,8 +146,6 @@ h1
     -webkit-text-fill-color: transparent
     -webkit-box-decoration-break: clone
     box-decoration-break: clone
-    -webkit-text-decoration-color: #ff8a00 !important
-    text-decoration-color: #ff8a00 !important
 
 small
     font-size: 1.2rem
@@ -168,59 +162,71 @@ button
     background: none
     border: none
     font-size: 100%
+    font-family: inherit
     color: inherit
     padding: 0
     margin: 0
 
-button
-    color: white
-    padding: 0.5em 1em
-    border-radius: 4em
+.cta
+    color: #FFFFFE
+    padding: 1rem 1.5rem
     font-size: 1.35rem
+    letter-spacing: 1px
+    font-weight: 500
     margin: 0.3em
-    transition: background 0.3s
-    border-radius: 10em
+    border: 0.2em solid
+    border-image-slice: 1
+    transition: all 0.5s
 
 .primary
-    background: linear-gradient(104.04deg, #14A9D6 14.96%, #9E31FF 88.71%)
-
+    border-image-source: linear-gradient(104.04deg, #14A9D6 14.96%, #9E31FF 88.71%)
     &:hover
-        background: linear-gradient(104.04deg, #14A9D6 14.96%, darken(#14A9D6, 10) 88.71%)
-        transition: background 0.3s
+        background: linear-gradient(104.04deg, #14A9D6 14.96%, #9E31FF 88.71%)
+        transition: all 0.5s
 
 .secondary
-    border: 2px solid
     border-image-source: linear-gradient(to left, #743ad5, #d53a9d)
-    border-image-slice: 1
-    border-radius: 10px
-
     &:hover
         background: linear-gradient(to left, #743ad5, #d53a9d)
-        transition: background 0.3s
+        transition: all 0.5s
 
 .sm
     width: max-content
     margin: 2em auto
     li
-        // border: 1px solid
         display: inline-block
         margin: 1em
 
 /********** Home section ***********/
 .skill
-    margin-bottom: 1em
+    margin-bottom: 2.5rem
     background: $secondary-bg-color
-    padding: 1em 0.7em
+    padding: 1rem 
 
 h3
     margin-bottom: 0
-    color: violet
-    font-weight: 500
+    font-weight: 700
+    text-transform: uppercase
+    color: $text-color
 
 /********** Services section ***********/
 
 h2
     text-align: center
+
+.service
+    display: flex
+    flex-direction: column
+    font-weight: 600
+    font-size: 2rem
+    margin: 2em
+    padding: 1em
+    background: $secondary-bg-color
+    width: content
+
+    img
+        width: 60%
+        margin: auto
 
 h4
     // background: linear-gradient(90deg,#ff8a00,#e52e71)
@@ -229,23 +235,8 @@ h4
     -webkit-text-fill-color: transparent
     -webkit-box-decoration-break: clone
     box-decoration-break: clone
-    // -webkit-text-decoration-color: #ff8a00 !important
-    // text-decoration-color: #ff8a00 !important
-
-.service
-    display: flex
-    flex-direction: column
+    margin: 0 0 1em 0
     text-align: center
-    font-weight: 600
-    font-size: 2rem
-    margin: 1em
-    padding: 1em
-    background: $secondary-bg-color
-    width: content
-
-    img
-        width: 60%
-        margin: 1em auto 0.5em
 
 /********** Home section ***********/
 
@@ -264,11 +255,13 @@ h4
 
 input, textarea
     width: 100%
-    background: none
-    border: 1px solid
     padding: 0.5em
     font-size: 100%
+    font-family: inherit
     color: inherit
+    background: #181818
+    border: none
+    border-radius: 4px
 
 label
     margin-bottom: 0.3em
@@ -279,11 +272,12 @@ input[type="submit"]
     border: none
     border: 2px solid #27d8c9
     color: #3dcec1
-    font-weight: bold
+    font-weight: 400
     transition: all 0.3s
+    text-transform: uppercase
 
     &:hover
-        background: #3dcec1
+        background: #1ab6a9
         color: white
         transition: all 0.3s
 
