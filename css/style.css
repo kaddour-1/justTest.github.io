@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
 /*********** Set up global variables ***********/
 /*Colors*/
 /*********** Set up general styles ***********/
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   background-color: #16161A;
   color: #94A1B2;
@@ -44,7 +45,7 @@ header {
   right: 0.7em;
   top: 15px;
   z-index: 1;
-  color: hotpink;
+  color: #94A1B2;
 }
 
 /* navbar */
@@ -98,7 +99,7 @@ nav {
   width: 24px;
   height: 3px;
   border-radius: 2px;
-  background-color: hotpink;
+  background-color: #94A1B2;
   transition: all 0.3s;
 }
 
@@ -145,12 +146,19 @@ nav {
 
 h1 {
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: bolder;
-  line-height: 1;
-  color: #1e9fd8;
+  line-height: 1.2;
   margin-top: 1.33em;
   margin-bottom: 1.33em;
+  font-weight: 900;
+  background: linear-gradient(90deg, #00e0fd, #f300fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  -webkit-text-decoration-color: #ff8a00 !important;
+  text-decoration-color: #ff8a00 !important;
 }
 
 small {
@@ -158,10 +166,6 @@ small {
   margin-bottom: 1em;
   display: inline-block;
   font-weight: 400;
-}
-
-.header {
-  font-size: 2.2rem;
 }
 
 .bio {
@@ -185,21 +189,25 @@ button {
   font-size: 1.35rem;
   margin: 0.3em;
   transition: background 0.3s;
+  border-radius: 10em;
 }
 
 .primary {
-  background: #7F5AF0;
+  background: linear-gradient(104.04deg, #14A9D6 14.96%, #9E31FF 88.71%);
 }
 .primary:hover {
-  background: #2CB67D;
+  background: linear-gradient(104.04deg, #14A9D6 14.96%, #1084a7 88.71%);
   transition: background 0.3s;
 }
 
 .secondary {
-  border: 2px solid #7F5AF0;
+  border: 2px solid;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  border-image-slice: 1;
+  border-radius: 10px;
 }
 .secondary:hover {
-  background: #7F5AF0;
+  background: linear-gradient(to left, #743ad5, #d53a9d);
   transition: background 0.3s;
 }
 
@@ -222,11 +230,20 @@ button {
 h3 {
   margin-bottom: 0;
   color: violet;
+  font-weight: 500;
 }
 
 /********** Services section ***********/
 h2 {
   text-align: center;
+}
+
+h4 {
+  background: linear-gradient(90deg, #00e0fd, #f300fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .service {
