@@ -34,17 +34,12 @@ a {
 }
 
 /********** Header ***********/
-header {
-  margin-top: 0.8em;
-  padding: 0;
-}
-
 /* Logo */
 .logo {
   font-weight: bolder;
   position: absolute;
-  right: 3rem;
-  top: 3rem;
+  right: 2rem;
+  top: 2rem;
   z-index: 1;
 }
 
@@ -69,6 +64,7 @@ nav {
 
 .menu {
   margin-top: 5em;
+  margin-left: 2rem;
 }
 
 .menu-link {
@@ -89,8 +85,8 @@ nav {
 /* Hamburger menu */
 .hamburger-menu {
   position: absolute;
-  left: 3rem;
-  top: 3rem;
+  left: 2rem;
+  top: 2rem;
   cursor: pointer;
   z-index: 1;
 }
@@ -131,7 +127,7 @@ nav {
 
 /********** Home section ***********/
 .wrapper {
-  margin: 0 3rem;
+  margin: 0 2rem;
 }
 
 .home-section {
@@ -145,9 +141,8 @@ nav {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 900;
-  line-height: 1.2;
   text-align: center;
   margin: 1.33em 0 0;
   background: linear-gradient(90deg, #00e0fd, #f300fb);
@@ -158,10 +153,7 @@ h1 {
 }
 
 small {
-  font-size: 1.2rem;
-  margin-bottom: 1em;
-  display: inline-block;
-  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .bio {
@@ -220,7 +212,7 @@ button {
 .skill {
   margin-bottom: 2.5rem;
   background: #242629;
-  padding: 1.2rem 3rem;
+  padding: 1.2rem 2rem;
 }
 
 h3 {
@@ -285,7 +277,7 @@ h4 {
 /********** contact section ***********/
 .contact {
   background: #242629;
-  padding: 1.2em 3rem;
+  padding: 1.2em 2rem;
   margin-bottom: 0;
 }
 
