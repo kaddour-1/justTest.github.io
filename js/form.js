@@ -4,7 +4,6 @@ formControl.forEach(input => {
     input.addEventListener("blur", animate);
 });
 
-
 function animate(event) {
     if (event.type == "focus") {
         this.parentElement.classList.add("focused");
